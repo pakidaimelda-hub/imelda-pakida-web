@@ -1,0 +1,5 @@
+[30-Jun-2026 10:54:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`jadwal`.`jadwal`, CONSTRAINT `id_guru` FOREIGN KEY (`id_guru`) REFERENCES `guru` (`id_guru`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\laragon\www\apk_jadwal\algoritma_ga.php:419
+Stack trace:
+#0 C:\laragon\www\apk_jadwal\algoritma_ga.php(419): mysqli_query(Object(mysqli), 'INSERT INTO jad...')
+#1 {main}
+  thrown in C:\laragon\www\apk_jadwal\algoritma_ga.php on line 419

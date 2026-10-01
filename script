@@ -1,0 +1,18 @@
+<pre class="hljs line-numbers language-markup" data-codetype="php" title="Script" style="color: rgb(169, 183, 198); background: rgb(40, 43, 46); display: block; overflow-x: auto; padding: 0.5em;">
+<br><br>#<span class="hljs-keyword" style="color: rgb(204, 120, 50);">set</span> variabel <span class="hljs-comment" style="color: grey;">id_jadwal, id_guru, id_kelas, id_jam, id_pelajaran, hari</span>
+if(id_guru <span class="hljs-comment" style="color: grey;">kosong){</span>
+    if(mata <span class="hljs-comment" style="color: grey;">pelajaran sudah ada){</span>
+        #tambah <span class="hljs-comment" style="color: grey;">mata pelajaran</span>
+    }else(mata <span class="hljs-comment" style="color: grey;">pelajaran tidak ada){</span>
+        #edit <span class="hljs-comment" style="color: grey;">mata pelajaran</span>
+}else(id_guru <span class="hljs-comment" style="color: grey;">ada){</span>
+    if(id_jadwal <span class="hljs-comment" style="color: grey;">belum ada){</span>
+        #kembali <span class="hljs-comment" style="color: grey;">ke halaman sebelumnya, dan tampilkan notif isi pelajaran terlebih dahulu</span>
+    }else(id_jadwal <span class="hljs-comment" style="color: grey;">sudah ada){</span>
+        if(guru <span class="hljs-comment" style="color: grey;">sudah ada di jam + hari yang sama){</span>
+            #kembali <span class="hljs-comment" style="color: grey;">ke halaman sebelumnya, dan tampilkan notif guru sudah mengisi di kelas lain</span>
+        }else(guru <span class="hljs-comment" style="color: grey;">belum ada di jam + hari yang sama){</span>
+            #tambah <span class="hljs-comment" style="color: grey;">data dan kembali ke halaman sebelumnya</span>
+        }
+    }
+}</pre>
